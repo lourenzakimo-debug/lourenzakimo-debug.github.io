@@ -1,29 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lourenza Kim Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b0b0b;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:#111;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#7db8ff;
+}
+
+section{
+    padding:70px 10%;
+    text-align:center;
+}
+
+h1{
+    font-size:50px;
+    margin:10px 0;
+}
+
+h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:3px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:12px;
+    margin:15px auto;
+    max-width:700px;
+}
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.skill{
+    background:white;
+    color:black;
+    padding:10px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:white;
+    color:black;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<div class="container">
+<!-- HOME -->
+<section id="home">
 
+<!-- PUT YOUR FORMAL PFP HERE -->
 <img src="https://via.placeholder.com/180" class="profile-pic">
 
 <h1>Lourenza Kim Otbot</h1>
-
 <p>Information Systems Student • System Analyst</p>
 
-<a class="btn" href="about.html">View More</a>
+<a class="btn" href="#about">View More</a>
 
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a BS Information Systems student focused on system analysis,
+business process improvement, and designing efficient systems
+for organizations.
+</p>
 </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skill-box">
+<div class="skill">Requirements Gathering</div>
+<div class="skill">System Analysis</div>
+<div class="skill">DFD</div>
+<div class="skill">ERD</div>
+<div class="skill">MySQL</div>
+<div class="skill">Documentation</div>
+<div class="skill">Canva</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Coffee Shop System</h3>
+<p>System analysis and documentation.</p>
+</div>
+
+<div class="card">
+<h3>Barangay Information System</h3>
+<p>Requirements gathering and system planning.</p>
+</div>
+
+<div class="card">
+<h3>Business Process Project</h3>
+<p>Workflow analysis and documentation.</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<p>📱 09944066199</p>
+<p>📧 lourenzakimo@gmail.com</p>
+<p>📘 Facebook: Lourenza Otbot</p>
+</div>
+
+</section>
 
 </body>
 </html>
